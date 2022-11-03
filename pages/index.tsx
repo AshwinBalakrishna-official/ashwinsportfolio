@@ -1,5 +1,7 @@
 import Head from 'next/head'
 import Image from 'next/image'
+import Header from '../components/Header'
+import Hero from '../components/Hero'
 
 
 export default function Home() {
@@ -10,15 +12,14 @@ export default function Home() {
        
       </Head>
 
-      <h1 className='p-10 text-red-500'>Lezzz build a portfolio</h1>
-
-
       {/* Header */}
-
+        <Header />
 
 
       {/* HERO */}
-
+        <section id="hero">
+            <Hero />
+        </section>
 
       {/* About */}
 
