@@ -1,5 +1,8 @@
 import React from 'react';
+import Image from 'next/image';
 import {Cursor, useTypewriter} from 'react-simple-typewriter';
+import BackgroundCircles from './BackgroundCircles';
+
 
 type Props = {}
 
@@ -11,13 +14,18 @@ const Hero = (props: Props) => {
         delaySpeed : 2500
       })
   return (
-    <>
+    <div className='h-screen flex flex-col space-y-8 items-center justify-center'>
+        <BackgroundCircles />
 
-        <h1 className="">{text}<Cursor cursorColor='red' /></h1>
-        
+        {/* <Image src={} alt={"No Image found"} />  */}
+        <h1>
+            <span>{text}</span>
+            <Cursor cursorColor='#F7AB0A' />
+        </h1>
+    
 
 
-    </>
+    </div>
   )
 }
 
