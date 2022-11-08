@@ -50,7 +50,7 @@ const Header = (props: Props) => {
 
         // Slide in from right
           initial={{
-            x :-500,
+            x :-700,
             opacity : 0.5,
             scale : 0.1
           }}
