@@ -3,7 +3,7 @@ import Link from 'next/link';
 import Image from 'next/image';
 import {Cursor, useTypewriter} from 'react-simple-typewriter';
 import BackgroundCircles from './BackgroundCircles';
-import Image1 from '../public/Assets/images/ash2.JPG';
+
 
 
 type Props = {}
@@ -11,13 +11,15 @@ type Props = {}
 
 
 // Type writer package content
-const Hero = (props: Props) => {
+const Hero: React.FC<Props> = (props) => {
 
       const [text, count] = useTypewriter({
-        words : [`Hey!!!! It's Ash and I ❤️`,"Coding", "Exploring", "& Traveling"],
+        // words : [`Hey!!!! It's Ash and I ❤️`,"Coding", "Exploring", "& Traveling"],
+        words : ["|| 💻CODE💻 ||","|| 🧋COFFEE🧋 ||","|| 🌏Travel🌏 ||"],
         loop :true,
         delaySpeed : 1500
       })
+      
 
 
 
@@ -28,7 +30,7 @@ const Hero = (props: Props) => {
         <BackgroundCircles />
 
         {/* HERO IMAGE */}
-        <Image className=' relative rounded-full h-32 w-32 mx-auto object-cover' src={Image1}  alt={"No Image found"}/> 
+        <Image className=' relative rounded-full h-32 w-32 mx-auto object-cover' src='/Assets/images/ash2.JPG' width={100} height={100}  alt={"No Image found"}/> 
         
         
         <div className='z-20'>
