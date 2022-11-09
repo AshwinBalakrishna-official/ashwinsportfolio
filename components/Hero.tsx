@@ -30,7 +30,14 @@ const Hero: React.FC<Props> = (props) => {
         <BackgroundCircles />
 
         {/* HERO IMAGE */}
-        <Image className=' relative rounded-full h-32 w-32 mx-auto object-cover' src='/Assets/images/ash2.JPG' width={100} height={100}  alt={"No Image found"}/> 
+        <Image 
+          className=' relative rounded-full h-32 w-32 mx-auto object-cover' 
+          src='/Assets/images/ash2.JPG'
+          // src="https://drive.google.com/uc?export=view&id=1c1BzL3xfkSAZVMBEhm5ZLX7r9S-MVtTL"
+          width={150} 
+          height={300}  
+          alt={"No Image found"}
+          /> 
         
         
         <div className='z-20'>
@@ -51,17 +58,17 @@ const Hero: React.FC<Props> = (props) => {
           <div className='pt-5' >
 
             {/* About Section */}
-            <Link href="#about">
+            <Link href="#about" scroll={false}>
              <button className='heroButton'>About</button>
             </Link>
             
             {/* SKills Section */}
-            <Link href="#skills">
+            <Link href="#skills" scroll={false}>
               <button className='heroButton'>Skills</button>
             </Link>
             
             {/* Experience section */}
-            <Link href="#experience">
+            <Link href="#experience" scroll={false}>
               <button className='heroButton'>Experience</button>
             </Link>
             

@@ -1,16 +1,81 @@
 import React from 'react'
 import SectionHeader from './SectionHeader'
+import {motion} from 'framer-motion'
 
 type Props = {}
 
 const About = (props: Props) => {
   return (
-    <div className='flex flex-col relative h-screen text-center md:text-left md:flex-row max-w-7xl px-10 justify-evenly items-center'>
+    <motion.div 
+    initial={{
+        opacity:0
+    }}
+
+    whileInView={{
+        opacity :1
+    }}
+
+    transition={{
+        duration:2
+    }}
+
+    
+    className='flex flex-col relative h-screen text-center md:text-left md:flex-row max-w-7xl px-10 justify-evenly items-center'>
         {/* <h3 className='absolute top-24 uppercase tracking-[20px] text-gray-500 text-2xl'>
             About
         </h3> */}
         <SectionHeader sectionName="About" />
-    </div>
+
+        <motion.img
+            initial={{
+                x:-200,
+                opacity:0
+            }}
+
+            whileInView={{
+                x:0,
+                opacity:1
+            }}
+
+            transition={{
+                duration : 1
+            }}
+
+            className="-mb-20 xl:mt-20 md:mb-0 flex-shrink-0 w-56 h-56 rounded-full object-fit md:rounded-lg md:w-64 md:h-95 xl:w-[400px] xl:h-[400px]"
+            src="Assets/images/Software-Developer.svg"
+            alt="no img found"
+            width={300}
+            height={300}
+        />
+
+
+        <div className='space-y-10 px-0 md:px-10'>
+            <h4 className='text-4xl font-semibold'>
+                WHO <span className='underline decoration-[#F7AB0A]/50'>AM</span> I ?
+            </h4>
+            <motion.p  
+            initial={{
+                y:100,
+                opacity:0
+            }}
+
+            whileInView={{
+                
+                    y:0,
+                    opacity:1
+            }}
+
+            transition={{
+                duration:1.5
+            }}
+            className='text-base text-lg font-semibold'>
+                Hey this is Ash... I am a front End web developer highly passionate about coding and designing. A coffee addict with insomnia, I&apos;m a computer grad who is enthusiastic about bringing ideas into life and brainstorm solutions to make work life easier... Got a place to hangout and watch football or cricket matches, count me in. 
+            </motion.p>
+            <br /><br />
+            <hr style={{borderColor : "#F7AB0A"}}/>
+
+        </div>
+    </motion.div>
   )
 }
 
