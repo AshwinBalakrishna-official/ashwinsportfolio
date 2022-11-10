@@ -1,4 +1,5 @@
 import React from 'react'
+import ExperienceCard from './ExperienceCard'
 import SectionHeader from './SectionHeader'
 
 type Props = {}
@@ -10,6 +11,24 @@ const Experience = (props: Props) => {
             Experience
         </h3> */}
         <SectionHeader sectionName='experience' />
+
+        {/* Experience card */}
+        
+        {/* Codingmart */}
+        <ExperienceCard />
+
+        
+        {/* Codingmart-ABFRL */}
+        <ExperienceCard />
+
+        {/* Codingnmart-2HUB*/}
+        <ExperienceCard />
+
+        {/* Skillsify */}
+        <ExperienceCard />
+
+        
+        
     </div>
   )
 }
