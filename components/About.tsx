@@ -36,7 +36,7 @@ const About = (props: Props) => {
         transition={{
           duration: 1,
         }}
-        className="-mb-20 xl:mt-20 md:mb-0 flex-shrink-0 w-56 h-56 rounded-full object-fit md:rounded-lg md:w-64 md:h-95 xl:w-[400px] xl:h-[400px]"
+        className="-mb-20 xl:mt-20 md:mb-0 mt-20 flex-shrink-0 w-56 h-56 rounded-full object-fit md:rounded-lg md:w-64 md:h-95 xl:w-[400px] xl:h-[400px]"
         src="Assets/images/Software-Developer.svg"
         alt="no img found"
         width={300}

@@ -22,7 +22,7 @@ const BackgroundCircles = (props: Props) => {
     transition={{
         duration :2.5,
     }}
-    className='relative flex justify-center items-center'>
+    className='relative flex justify-center items-center mt-56 md:mt-30 xl:mt-40'>
     
     
     

@@ -7,7 +7,7 @@ type Props = {
 const SectionHeader:React.FC<Props> = (props) => {
   return (
     <>
-        <h3 className='absolute top-24 uppercase tracking-[20px] text-gray-500 text-2xl'>
+        <h3 className='absolute top-24 xl:top-12 uppercase tracking-[20px] text-gray-500 text-2xl'>
             {props.sectionName}
         </h3>
     </>
