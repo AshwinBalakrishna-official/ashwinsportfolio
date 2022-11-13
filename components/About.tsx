@@ -36,7 +36,7 @@ const About = (props: Props) => {
         transition={{
           duration: 1,
         }}
-        className="-mb-20 xl:mt-20 md:mb-0 mt-20 flex-shrink-0 w-56 h-56 rounded-full object-fit md:rounded-lg md:w-64 md:h-95 xl:w-[400px] xl:h-[400px]"
+        className="-mb-20 xl:mt-20 md:mb-0 mt-20 md:mt-40 flex-shrink-0 w-56 h-56 rounded-full object-fit md:rounded-lg md:w-64 md:h-95 xl:w-[400px] xl:h-[400px]"
         src="Assets/images/Software-Developer.svg"
         alt="no img found"
         width={300}
@@ -44,7 +44,7 @@ const About = (props: Props) => {
       />
 
         {/* Right Side Content */}
-      <div className="space-y-10 px-0 md:px-10">
+      <div className="space-y-10 px-0 md:px-0">
         
         {/* Heading for Intro */}
         <h4 className="text-4xl font-semibold">

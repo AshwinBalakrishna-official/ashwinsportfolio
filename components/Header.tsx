@@ -70,7 +70,7 @@ const Header = (props: Props) => {
           //  Open the mail Id to send
           onClick={()=>{window.location.href=`mailto:ashwinbkrish@gmail.com`}}
           
-          className='flex flex-row cursor-pointer items-center' 
+          className='flex flex-row cursor-pointer items-center mr-24' 
           
           
           >
