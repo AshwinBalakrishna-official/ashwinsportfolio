@@ -37,19 +37,20 @@ const ExperienceCard = (props: Props) => {
         {/* Tech Stack */}
         <div className="flex space-x-2 my-5 md:my-1">
           {/* Tech1 */}
+          
           <Image
-            src="/Assets/techlogo/NextjsIcon.png"
+            src="/Assets/techlogo/ReactIcon.png"
             alt="No_img"
-            className="h-10 w-10 rounded-full bg-white"
+            className="h-10 w-10 rounded-full "
             width={100}
             height={100}
           />
 
           {/* Tech2 */}
           <Image
-            src="/Assets/techlogo/ReactIcon.png"
+            src="/Assets/techlogo/NextjsIcon.png"
             alt="No_img"
-            className="h-10 w-10 rounded-full "
+            className="h-10 w-10 rounded-full"
             width={100}
             height={100}
           />
