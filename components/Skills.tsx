@@ -8,6 +8,17 @@ type Props = {}
 const Skills = (props: Props) => {
   return (
     <motion.div 
+    initial={{
+      opacity :0 
+    }}
+
+    whileInView={{
+      opacity:1
+    }}
+
+    transition={{
+      duration: 1.5
+    }}
     
     
     
@@ -18,8 +29,11 @@ const Skills = (props: Props) => {
 
         <SectionHeader sectionName="skills" />
 
+        <h3 className='absolute top-36 xl:top-36 md:top-24 uppercase tracking-[3px] text-gray-500 text-sm'>
+          Hover over a skill to view Proficiency
+        </h3>
         {/* List all skills */}
-        <div className='grid grid-cols-4 gap-5'>
+        <div className='grid grid-cols-4 gap-5 mt-20'>
           <Skill />
           <Skill />
           <Skill />
