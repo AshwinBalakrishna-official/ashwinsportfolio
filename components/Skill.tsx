@@ -9,23 +9,7 @@ type Props = {
 const Skill = ({directionLeft}: Props) => {
   return (
     <div className='group relative flex cursor-pointer '>
-      <motion.img 
-        initial={{
-          x: directionLeft? -200 :200,
-          opacity : 0
-        }
-      }
-
-      whileInView={{
-        x:0,
-        opacity:1
-      }}
-
-      transition={{
-        duration :1.5
-      }}
-
-      src="Assets/techlogo/NextjsIcon.png"
+      <img src="Assets/techlogo/NextjsIcon.png"
 
       className='rounded-full border border-gray-500 object-cover w-18 h-18 xl:w-24 xl:h-24 filter group-hover:grayscale transition duration-300 ease-in-out'
       />

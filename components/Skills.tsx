@@ -28,12 +28,13 @@ const Skills = (props: Props) => {
         </h3> */}
 
         <SectionHeader sectionName="skills" />
-
+        
         <h3 className='absolute top-36 xl:top-36 md:top-24 uppercase tracking-[3px] text-gray-500 text-sm'>
           Hover over a skill to view Proficiency
         </h3>
+
         {/* List all skills */}
-        <div className='grid grid-cols-4 gap-5 mt-20'>
+        <div className='grid grid-cols-4 gap-5 mt-20 '>
           <Skill />
           <Skill />
           <Skill />
