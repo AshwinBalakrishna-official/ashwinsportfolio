@@ -9,8 +9,9 @@ type Props = {};
 // Type writer package content
 const Hero: React.FC<Props> = (props) => {
   const [text, count] = useTypewriter({
-    // words : [`Hey!!!! It's Ash and I ❤️`,"Coding", "Exploring", "& Traveling"],
-    words: ["|| 💻CODE💻 ||", "|| 🧋COFFEE🧋 ||", "|| 🌏Travel🌏 ||"],
+    //words : [`Hey!!!! It's Ash and I ❤️`,"Coding", "Exploring", "& Traveling"],
+    // words: ["|| 💻CODE💻 ||", "|| 🧋COFFEE🧋 ||", "|| 🌏Travel🌏 ||"],
+    words: ["|| CODE ||", "|| COFFEE ||", "|| Travel ||"],
     loop: true,
     delaySpeed: 1500,
   });
