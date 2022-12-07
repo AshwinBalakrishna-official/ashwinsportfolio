@@ -23,18 +23,18 @@ const ContactMe = (props: Props) => {
 
             {/* Email */}
             <div className='mt-3 flex items-center space-x-5 justify-center'>
-                <EnvelopeIcon className='text-[#F7AB0A]/80 w-7 h-7 animate-pulse'/>
+                <EnvelopeIcon className='text-[#F7AB0A]/90 w-7 h-7 animate-pulse'/>
                 <p className='text-2xl'>ashwinbkrish@gmail.com</p>
             </div>
 
-            <div className='flex flex-row '>
+            <div className='flex flex-row text-center justify-between'>
             
                 <div >
-                   <button className='w-[200px]` bg-[#F7AB0A]/50 '>Make a Call</button>
+                   <button className='w-[200px] text-black font-semibold  rounded-lg px-5 py-3 bg-[#F7AB0A] opacity-50 hover:opacity-100  '>Make a Call</button>
                 </div> 
                 
                 <div>
-                   <button className='w-full bg-[#F7AB0A]/50 '>Make a Call</button>
+                   <button className='w-[200px] rounded-lg font-semibold opacity-50 px-5 py-3 bg-black hover:opacity-100  '>Send an email</button>
                 </div> 
                 {/* <button className="w-[50%] ">Send a Mail</button> */}
 
