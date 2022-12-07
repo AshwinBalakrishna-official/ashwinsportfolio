@@ -36,7 +36,7 @@ const About = (props: Props) => {
         transition={{
           duration: 1,
         }}
-        className="-mb-20 xl:mt-20 md:mb-0 mt-20 md:mt-40 flex-shrink-0 w-56 h-56 rounded-full object-fit md:rounded-lg md:w-64 md:h-95 xl:w-[400px] xl:h-[400px]"
+        className="-mb-20 xs:mb-0  xl:mt-20 mt-20  xs:mt-20 flex-shrink-0 w-56 h-56 rounded-full object-fit md:rounded-lg xl:w-[400px] xl:h-[400px]"
         src="Assets/images/Software-Developer.svg"
         alt="no img found"
         width={300}
@@ -44,7 +44,7 @@ const About = (props: Props) => {
       />
 
         {/* Right Side Content */}
-      <div className="space-y-10 px-0 md:px-0">
+      <div className="space-y-10 xs:space-y-3 px-0 md:px-0 ">
         
         {/* Heading for Intro */}
         <h4 className="text-4xl font-semibold">
@@ -64,7 +64,7 @@ const About = (props: Props) => {
           transition={{
             duration: 1.5,
           }}
-          className="text-base text-lg font-semibold"
+          className="text-base xl:text-lg xl:font-semibold md:text-lg md:font-semibold xs:text-sm xs:font-thin xs:mb-0"
         >
           Hey this is Ash... I am a front End web developer highly passionate
           about coding and designing. A coffee addict with insomnia, I&apos;m a

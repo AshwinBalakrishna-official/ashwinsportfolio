@@ -17,9 +17,9 @@ const Hero: React.FC<Props> = (props) => {
   });
 
   return (
-    <div className="-mt-30">
+    <div className="-mt-30 ">
     
-      <div className="h-screen flex flex-col space-y-8 items-center justify-center text-center overflow-hidden">
+      <div className="h-screen flex flex-col space-y-8 items-center justify-center text-center overflow-hidden ">
         {/* ANIMATION BACKGROUND */}
         <BackgroundCircles />
 
