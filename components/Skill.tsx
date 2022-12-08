@@ -16,7 +16,7 @@ const Skill = ({directionLeft}: Props) => {
 
       <div className='absolute rounded-full opacity-0 group-hover:opacity-80 transition duration-300 ease-in-out group-hover:bg-white w-16 h-16 xl:w-24 xl:h-24 z-0'>
         <div className='flex items-center justify-center h-full'>
-          <p className='text-1xl xl:text-3xl font-bold text-black'>100%</p>
+          <p className='text-1xl xl:text-3xl font-bold text-black' style={{userSelect:"none"}}>100%</p>
         </div>
       </div>
 

@@ -6,7 +6,26 @@ import SectionHeader from './SectionHeader'
 type Props = {}
 
 const Projects = (props: Props) => {
-  const projects=["2HUB","ABFRL","KALANJU","E-COURT SEVA","TinDog" ]
+  const projects=[
+                  {
+                    name:"2HUB",
+                    description:"Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores dolorem ipsum quae ea sint quidem saepe porro ipsa eum. Quas commodi voluptatum numquam sit fuga quibusdam a culpa. Recusandae, expedita?"
+                  },
+                  {
+                    name:"ABFRL",
+                    description:"Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores dolorem ipsum quae ea sint quidem saepe porro ipsa eum. Quas commodi voluptatum numquam sit fuga quibusdam a culpa. Recusandae, expedita?"
+                  },
+                  {name:"KALANJU",
+                    description: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores dolorem ipsum quae ea sint quidem saepe porro ipsa eum. Quas commodi voluptatum numquam sit fuga quibusdam a culpa. Recusandae, expedita?"
+                  },
+                  {name:"E-COURT SEVA",
+                    description: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores dolorem ipsum quae ea sint quidem saepe porro ipsa eum. Quas commodi voluptatum numquam sit fuga quibusdam a culpa. Recusandae, expedita?"
+                  },
+                  {
+                    name:"TinDog",
+                    description: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores dolorem ipsum quae ea sint quidem saepe porro ipsa eum. Quas commodi voluptatum numquam sit fuga quibusdam a culpa. Recusandae, expedita?"
+                  },
+                ]
   return (
     
     <div className='flex flex-col relative text-center md:flex-row max-w-full px-10 justify-evenly mx-auto items-center w-full z-0 h-screen'>
@@ -42,10 +61,10 @@ const Projects = (props: Props) => {
 
               src="/Assets/logo/ABFRLlogo.png" alt="no_img" className='m-auto w-32 rounded xs:mt-20' />
               <div className='space-y-5 xs:space-y-2 xl:px-20 xs:px-1 px-1 xs:max-w-6xl max-w-3xl '>
-                <h3 className='text-4xl font-semibold text-center mb-1'>
-                  {project}
+                <h3 className='text-4xl xs:text-2xl font-semibold text-center mb-1'>
+                  {project.name}
                 </h3> 
-                <p className='mt-2'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores dolorem ipsum quae ea sint quidem saepe porro ipsa eum. Quas commodi voluptatum numquam sit fuga quibusdam a culpa. Recusandae, expedita?</p>
+                <p className='mt-2'>{project.description}</p>
                 <h4>
                   <span className=' text-xl font-semibold underline decoration-[#F7AB0A]'>
                   Case Study: {idx+1} of {projects.length}
