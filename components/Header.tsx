@@ -2,6 +2,8 @@ import React from 'react';
 import { SocialIcon } from 'react-social-icons';
 import {motion} from 'framer-motion';
 
+import { DocumentTextIcon } from '@heroicons/react/24/outline'
+
 type Props = {}
 
 const Header = (props: Props) => {
@@ -67,16 +69,31 @@ const Header = (props: Props) => {
            }}
           
 
-          //  Open the mail Id to send
-          onClick={()=>{window.location.href=`mailto:ashwinbkrish@gmail.com`}}
+         
           
           className='flex flex-row cursor-pointer items-center mr-24' 
-          
-          
           >
 
+          {/* Mail */}
+          <div  
+            //  Open the mail Id to send
+             onClick={()=>{window.location.href=`mailto:ashwinbkrish@gmail.com`}}
+          >
             <SocialIcon className='cursor-pointer' fgColor='gray' bgColor='transparent' network='email' />
             <p className='uppercase hidden md:inline-flex text-sm text-gray-600'>Get in touch</p>
+          </div>
+          
+          {/* Resume */}
+          <div  
+            //  Open the mail Id to send
+
+             onClick={()=>{window.location.href=`Assets/Ashwin-resume.pdf`}}
+            className='flex flex-row ml-4'
+          >
+            {/* <SocialIcon className='cursor-pointer' fgColor='gray' bgColor='transparent' network='soundcloud' /> */}
+            <DocumentTextIcon className='h-6 w-6 text-gray-500 text-semibold'/>
+            <p className='ml-2 font-semibold uppercase hidden md:inline-flex text-sm text-gray-600'>Resume</p>
+          </div>  
         </motion.div>
     </header>
   )
