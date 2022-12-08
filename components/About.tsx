@@ -66,15 +66,16 @@ const About = (props: Props) => {
           }}
           className="text-base xl:text-lg xl:font-semibold md:text-lg md:font-semibold xs:text-sm xs:font-thin xs:mb-0"
         >
-          Hey this is Ash... I am a front End web developer highly passionate
-          about coding and designing. A coffee addict with insomnia, I&apos;m a
-          computer grad who is enthusiastic about bringing ideas into life and
-          brainstorm solutions to make work life easier... Got a place to
-          hangout and watch football or cricket matches, count me in.
-        </motion.p>
-        <br />
-        <br />
 
+          Hello, I&apos;m Ash. As a front-end web developer,
+          coding and designing are my two great loves.<br />
+           I&apos;m a computer graduate, a coffee addict with insomnia, <br />
+           and I love to brainstorm ideas and find solutions to make my job easier.<br />
+           I&apos;m down to watch or play some sport if you have a spot
+           or an 8<sup>2</sup > box board game if u have figured it out !!
+        </motion.p>
+        
+        <br />
         {/* Baseline */}
         <hr style={{ borderColor: "#F7AB0A" }} />
 

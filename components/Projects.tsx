@@ -40,8 +40,8 @@ const Projects = (props: Props) => {
                 once :true
               }}
 
-              src="/Assets/logo/ABFRLlogo.png" alt="no_img" className='m-auto w-32 rounded' />
-              <div className='space-y-5 xl:px-20 md:px-1 px-1 xl:max-w-3xl sm:max-w-full'>
+              src="/Assets/logo/ABFRLlogo.png" alt="no_img" className='m-auto w-32 rounded xs:mt-20' />
+              <div className='space-y-5 xs:space-y-2 xl:px-20 xs:px-1 px-1 xs:max-w-6xl max-w-3xl '>
                 <h3 className='text-4xl font-semibold text-center mb-1'>
                   {project}
                 </h3> 

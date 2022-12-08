@@ -10,7 +10,7 @@ const ExperienceCard = (props: Props) => {
       {/* Image of Company */}
       <motion.img
         initial={{
-          y: -100,
+          y: -50,
           opacity: 0,
         }}
         whileInView={{
@@ -21,21 +21,21 @@ const ExperienceCard = (props: Props) => {
           duration: 1.5,
         }}
         viewport={{ once: true }}
-        className="w-32 h-32 rounded-full md:rounded-full md:w-[80px] md:h-[80px] xl:w-32 xl:h-32  object-left object-cover my-1"
+        className="w-32 h-32 rounded-full md:rounded-full xs:w-[80px] xs:h-[80px] xl:w-32 xl:h-32  object-left object-cover my-1"
         // Company Logo
         src="Assets/logo/codingmartlogo.png"
         alt="No img"
       />
 
       {/* Work related to company */}
-      <div className="px-0 md:px-5">
+      <div className="px-0 xs:px-1">
         {/* JOB TITLE */}
         <h4 className="text-1xl font-light mt-3 ">PRODUCT ENGINEER</h4>
         {/* Company Name */}
         <p className="font-bold text-xl mt-1 ">Codingmart Technologies</p>
 
         {/* Tech Stack */}
-        <div className="flex space-x-2 my-5 md:my-1">
+        <div className="flex space-x-2  my-5 xs:my-1">
           {/* Tech1 */}
           
           <Image
