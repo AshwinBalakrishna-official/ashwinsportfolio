@@ -37,10 +37,10 @@ const Header = (props: Props) => {
         
         >
             {/* Social Icon Urls */}
-            <span className='px-2 m-0'><SocialIcon  url="https://www.linkedin.com/in/ashwin-balakrishna/" fgColor='gray' bgColor='transparent' /></span>
-            <span className='px-2 m-0'><SocialIcon  url="https://github.com/AshwinBalakrishna-official" fgColor='gray' bgColor='transparent'/></span>
-            <span className='px-2 m-0'><SocialIcon  url="https://twitter.com/ashwinbkrish" fgColor='gray' bgColor='transparent'/> </span>
-            <span className='px-2 m-0'><SocialIcon  url="https://www.instagram.com/crypto_._ash/" fgColor='gray' bgColor='transparent'/> </span>
+            <span className='px-2 m-0 xs:px-1'><SocialIcon  url="https://www.linkedin.com/in/ashwin-balakrishna/" fgColor='gray' bgColor='transparent' /></span>
+            <span className='px-2 m-0 xs:px-1'><SocialIcon  url="https://github.com/AshwinBalakrishna-official" fgColor='gray' bgColor='transparent'/></span>
+            <span className='px-2 m-0 xs:px-1'><SocialIcon  url="https://twitter.com/ashwinbkrish" fgColor='gray' bgColor='transparent'/> </span>
+            <span className='px-2 m-0 xs:px-1'><SocialIcon  url="https://www.instagram.com/crypto_._ash/" fgColor='gray' bgColor='transparent'/> </span>
             
            
         </motion.div>
@@ -88,7 +88,7 @@ const Header = (props: Props) => {
             //  Open the mail Id to send
 
              onClick={()=>{window.location.href=`Assets/Ashwin-resume.pdf`}}
-            className='flex flex-row ml-4'
+            className='flex flex-row ml-4 xs:ml-3'
           >
             {/* <SocialIcon className='cursor-pointer' fgColor='gray' bgColor='transparent' network='soundcloud' /> */}
             <DocumentTextIcon className='h-6 w-6 text-gray-500 text-semibold'/>

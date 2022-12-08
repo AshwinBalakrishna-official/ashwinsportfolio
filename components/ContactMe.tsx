@@ -12,25 +12,25 @@ const ContactMe = (props: Props) => {
         <div className='flex flex-col space-y-10 mt-3 xs:px-10'>
             <h4 className='text-3xl xs:text-3xl font-semibold'>
                 <span>Guess I have what you need!</span>
-                <span className='text-xl font-semibold underline decoration-[#F7AB0A]'> Lets Talk</span>
+                <span className='text-xl font-semibold underline decoration-[#FFA500]'> Lets Talk</span>
             </h4>
 
             {/* Mobile Number */}
             <div className='mt-3 flex items-center space-x-5 justify-center'>
-                <PhoneIcon className='text-[#F7AB0A]/80 w-7 h-7 animate-pulse'/>
+                <PhoneIcon className='text-[#FFA500] w-7 h-7 animate-pulse'/>
                 <p className='text-2xl'>+91 9791091511</p>
             </div>
 
             {/* Email */}
             <div className='mt-3 flex items-center space-x-5 justify-center'>
-                <EnvelopeIcon className='text-[#F7AB0A]/90 w-7 h-7 animate-pulse'/>
+                <EnvelopeIcon className='text-[#FFA500] w-7 h-7 animate-pulse'/>
                 <p className='text-2xl'>ashwinbkrish@gmail.com</p>
             </div>
 
             <div className='flex flex-row text-center justify-between'>
             
                 <div >
-                   <button className='w-[200px] xs:w-[150px] text-black font-semibold  rounded-lg px-5 py-3 bg-[#F7AB0A] opacity-50 hover:opacity-100  '>Make a Call</button>
+                   <button className='w-[200px] xs:w-[150px] font-semibold  rounded-lg px-5 py-3 bg-[#FFA500]/70   '>Make a Call</button>
                 </div> 
                 
                 <div>
@@ -42,7 +42,7 @@ const ContactMe = (props: Props) => {
         </div>
 
 
-    
+    {/* opacity-50 hover:opacity-100 */}
       
     </div>
   )

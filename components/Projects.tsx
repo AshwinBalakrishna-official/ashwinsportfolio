@@ -8,15 +8,17 @@ type Props = {};
 const Projects = (props: Props) => { 
   const projects = [
     {
+      url:"https://2hub.travel/home",
       img: "/Assets/logo/2HUBlogo.png",
-      name: "2HUB",
+      name: "Cinescape",
       description:
         "Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores dolorem ipsum quae ea sint quidem saepe porro ipsa eum. Quas commodi voluptatum numquam sit fuga quibusdam a culpa. Recusandae, expedita?",
     },
 
     {
+      url:"",
       img: "/Assets/logo/ABFRLlogo.png",
-      name: "ABFRL",
+      name: "CV-Maker",
       description:
         "Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores dolorem ipsum quae ea sint quidem saepe porro ipsa eum. Quas commodi voluptatum numquam sit fuga quibusdam a culpa. Recusandae, expedita?",
     },
@@ -49,7 +51,7 @@ const Projects = (props: Props) => {
         </h3> */}
       <SectionHeader sectionName="projects" />
 
-      <div className="relative w-full flex overflow-x-scroll overflow-y-hidden snap-x snap-mandatory z-20 scrollbar scrollbar-track-gray-400/20 scrollbar-thumb-[#F7AB0A]/80 scrollbar-thin ">
+      <div className="relative w-full flex overflow-x-scroll overflow-y-hidden snap-x snap-mandatory z-20 scrollbar scrollbar-track-gray-400/20 scrollbar-thumb-[#FFA500]/80 scrollbar-thin ">
         {/* Projects */}
         {projects.map((project, idx) => (
           <div
@@ -81,8 +83,8 @@ const Projects = (props: Props) => {
               </h3>
               <p className="mt-2">{project.description}</p>
               <h4>
-                <span className=" text-xl font-semibold underline decoration-[#F7AB0A]">
-                  Case Study: {idx + 1} of {projects.length}
+                <span className=" text-xl font-semibold underline decoration-[#FFA500]">
+                  Project: {idx + 1} of {projects.length}
                 </span>
               </h4>
             </div>
@@ -90,7 +92,7 @@ const Projects = (props: Props) => {
         ))}
       </div>
 
-      <div className="absolute mt-10 bg-[#F7AB0A]/10 left-0 xl:h-[400px] h-[600px] w-full -skew-y-12"></div>
+      <div className="absolute mt-10 bg-[#FFA500]/10 left-0 xl:h-[400px] h-[600px] w-full -skew-y-12"></div>
     </div>
   );
 };
