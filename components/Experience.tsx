@@ -14,7 +14,7 @@ const Experience = (props: Props) => {
 
       {/* Experience card */}
 
-      <div className="mt-3 w-full flex space-x-5 overflow-x-scroll p-10 snap-x snap-mandatory scrollbar scrollbar-track-gray-400/20 scrollbar-thumb-[#FFA500]/80 scrollbar-thin ">
+      <div className="mt-3 w-full flex space-x-5 overflow-x-scroll p-10 snap-x snap-mandatory scrollbar scrollbar-track-gray-400/20 scrollbar-thumb-[#88f305]/80 scrollbar-thin ">
         {/* Codingmart */}
         <ExperienceCard />
 

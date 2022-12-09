@@ -48,7 +48,7 @@ const About = (props: Props) => {
         
         {/* Heading for Intro */}
         <h4 className="text-4xl font-semibold">
-          WHO <span className="underline decoration-[#FFA500]/50">AM</span> I ?
+          WHO <span className="underline decoration-[#88f305]/50">AM</span> I ?
         </h4>
 
         {/* Paragraph for intro */}
@@ -77,7 +77,7 @@ const About = (props: Props) => {
         
         <br />
         {/* Baseline */}
-        <hr style={{ borderColor: "#FFA500" }} />
+        <hr style={{ borderColor: "#88f305" }} />
 
         
       </div>

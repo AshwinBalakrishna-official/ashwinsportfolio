@@ -51,7 +51,7 @@ const Projects = (props: Props) => {
         </h3> */}
       <SectionHeader sectionName="projects" />
 
-      <div className="relative w-full flex overflow-x-scroll overflow-y-hidden snap-x snap-mandatory z-20 scrollbar scrollbar-track-gray-400/20 scrollbar-thumb-[#FFA500]/80 scrollbar-thin ">
+      <div className="relative w-full flex overflow-x-scroll overflow-y-hidden snap-x snap-mandatory z-20 scrollbar scrollbar-track-gray-400/20 scrollbar-thumb-[#88f305]/80 scrollbar-thin ">
         {/* Projects */}
         {projects.map((project, idx) => (
           <div
@@ -83,7 +83,7 @@ const Projects = (props: Props) => {
               </h3>
               <p className="mt-2">{project.description}</p>
               <h4>
-                <span className=" text-xl font-semibold underline decoration-[#FFA500]">
+                <span className=" text-xl font-semibold underline decoration-[#88f305]">
                   Project: {idx + 1} of {projects.length}
                 </span>
               </h4>
@@ -92,7 +92,7 @@ const Projects = (props: Props) => {
         ))}
       </div>
 
-      <div className="absolute mt-10 bg-[#FFA500]/10 left-0 xl:h-[400px] h-[600px] w-full -skew-y-12"></div>
+      <div className="absolute mt-10 bg-[#88f305]/10 left-0 xl:h-[400px] h-[600px] w-full -skew-y-12"></div>
     </div>
   );
 };
