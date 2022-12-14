@@ -43,7 +43,7 @@ const Hero: React.FC<Props> = (props) => {
           {/* Hobbies */}
           <h1 className="text-4xl lg:text-5xl font-semibold px-2">
             <span>{text}</span>
-            <Cursor cursorColor="#88f305" />
+            <Cursor cursorColor="#FFA500" />
           </h1>
 
           {/* Menu TO TRAVEL IN PAGE */}

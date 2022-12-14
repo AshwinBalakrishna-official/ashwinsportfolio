@@ -39,7 +39,7 @@ const BackgroundCircles = (props: Props) => {
 
 
         {/* Diff color circle */}
-        <div className=" absolute border border-[#88f305] opacity-30 rounded-full h-[600px] w-[600px] mt-52 animate-pulse"/>
+        <div className=" absolute border border-[#FFA500] opacity-30 rounded-full h-[600px] w-[600px] mt-52 animate-pulse"/>
 
 
 

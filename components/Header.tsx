@@ -37,10 +37,10 @@ const Header = (props: Props) => {
         
         >
             {/* Social Icon Urls */}
-            <span className='px-2 m-0 xs:px-1'><SocialIcon  url="https://www.linkedin.com/in/ashwin-balakrishna/" fgColor='gray' bgColor='transparent' /></span>
-            <span className='px-2 m-0 xs:px-1'><SocialIcon  url="https://github.com/AshwinBalakrishna-official" fgColor='gray' bgColor='transparent'/></span>
-            <span className='px-2 m-0 xs:px-1'><SocialIcon  url="https://twitter.com/ashwinbkrish" fgColor='gray' bgColor='transparent'/> </span>
-            <span className='px-2 m-0 xs:px-1'><SocialIcon  url="https://www.instagram.com/crypto_._ash/" fgColor='gray' bgColor='transparent'/> </span>
+            <span className='px-2 m-0 xs:px-1'><SocialIcon  url="https://www.linkedin.com/in/ashwin-balakrishna/" target='_blank' fgColor='gray' bgColor='transparent' /></span>
+            <span className='px-2 m-0 xs:px-1'><SocialIcon  url="https://github.com/AshwinBalakrishna-official" target='_blank' fgColor='gray' bgColor='transparent'/></span>
+            <span className='px-2 m-0 xs:px-1'><SocialIcon  url="https://twitter.com/ashwinbkrish" target='_blank' fgColor='gray' bgColor='transparent'/> </span>
+            <span className='px-2 m-0 xs:px-1'><SocialIcon  url="https://www.instagram.com/crypto_._ash/" target='_blank' fgColor='gray' bgColor='transparent'/> </span>
             
            
         </motion.div>
@@ -77,7 +77,7 @@ const Header = (props: Props) => {
           {/* Mail */}
           <div  
             //  Open the mail Id to send
-             onClick={()=>{window.location.href=`mailto:ashwinbkrish@gmail.com`}}
+             onClick={()=>{window.location.href=`mailto:ashwinbkrish@gmail.com`,'_blank'}}
           >
             <SocialIcon className='cursor-pointer' fgColor='gray' bgColor='transparent' network='email' />
             <p className='uppercase hidden md:inline-flex text-sm text-gray-600'>Get in touch</p>
@@ -87,7 +87,7 @@ const Header = (props: Props) => {
           <div  
             //  Open the mail Id to send
 
-             onClick={()=>{window.location.href=`Assets/Ashwin-resume.pdf`}}
+             onClick={()=>{window.open(`Assets/Ashwin-resume.pdf`,'_blank')}}
             className='flex flex-row ml-4 xs:ml-3'
           >
             {/* <SocialIcon className='cursor-pointer' fgColor='gray' bgColor='transparent' network='soundcloud' /> */}
