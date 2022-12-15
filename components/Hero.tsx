@@ -49,7 +49,7 @@ const Hero: React.FC<Props> = (props) => {
           {/* Menu TO TRAVEL IN PAGE */}
           <div className="pt-5">
             {/* About Section */}
-            <Link href="#about" scroll={false}>
+            <Link href="#about" scroll={false} style={{scrollBehaviour:"smooth"}}>
               <button className="heroButton">About</button>
             </Link>
 
@@ -59,7 +59,7 @@ const Hero: React.FC<Props> = (props) => {
             </Link>
 
             {/* SKills Section */}
-            <Link href="#skills" scroll={false}>
+            <Link href="#skills" scroll={false} style={{scrollBehaviour:"smooth"}}>
               <button className="heroButton">Skills</button>
             </Link>
 

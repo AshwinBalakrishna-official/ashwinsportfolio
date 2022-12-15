@@ -71,7 +71,7 @@ const Header = (props: Props) => {
 
          
           
-          className='flex flex-row cursor-pointer items-center mr-24' 
+          className='flex flex-row cursor-pointer items-center mr-24 xs:mr-12' 
           >
 
           {/* Mail */}

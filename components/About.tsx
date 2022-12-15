@@ -70,7 +70,7 @@ const About = (props: Props) => {
 
           Hello, I&apos;m Ash. As a front-end web developer,
           coding and designing are my two great loves.
-          I&apos;m a computer graduate, a coffee addict with insomnia,
+          I&apos;m a computer graduate, a coffee addict with insomnia
           and love to brainstorm ideas and find solutions to make my job easier.
           I&apos;m down to watch or play some sport if you have a spot
           or an 8<sup>2</sup > box board game if u have figured it out !!
