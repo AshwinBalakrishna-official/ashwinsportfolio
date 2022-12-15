@@ -29,7 +29,7 @@ const Skills = (props: Props) => {
 
         <SectionHeader sectionName="skills" />
         
-        <h3 className='absolute top-24 xl:top-28 md:top-24 uppercase tracking-[3px] text-gray-500 text-sm'>
+        <h3 className='absolute top-36 xl:top-28 md:top-24 uppercase tracking-[3px] text-gray-500 text-sm'>
           Hover or click over a skill to view Proficiency
         </h3>
 

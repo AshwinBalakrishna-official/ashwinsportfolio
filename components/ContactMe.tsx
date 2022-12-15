@@ -30,11 +30,11 @@ const ContactMe = (props: Props) => {
             <div className='flex flex-row text-center justify-between'>
             
                 <div >
-                   <button className='w-[200px] xs:w-[150px] font-semibold  rounded-lg px-5 py-3 bg-[#FFA500]/70   '>Make a Call</button>
+                   <button className='w-[200px] xs:w-[150px] font-semibold  rounded-lg px-5 py-3 bg-[#FFA500]/70 ' onClick={()=>{window.location.href='tel:9791091511'}}>Make a Call</button>
                 </div> 
                 
                 <div>
-                   <button className='w-[200px] xs:w-[150px] rounded-lg font-semibold opacity-50 px-5 py-3 bg-black hover:opacity-100  '>Send an email</button>
+                   <button className='w-[200px] xs:w-[150px] rounded-lg font-semibold opacity-50 px-5 py-3 bg-black hover:opacity-100' onClick={()=>{window.location.href='mailto:ashwinbkrish@gmail.com'}}>Send an email</button>
                 </div> 
                 {/* <button className="w-[50%] ">Send a Mail</button> */}
 

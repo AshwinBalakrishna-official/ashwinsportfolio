@@ -79,21 +79,10 @@ const Header = (props: Props) => {
             //  Open the mail Id to send
              onClick={()=>{window.location.href=`mailto:ashwinbkrish@gmail.com`,'_blank'}}
           >
-            <SocialIcon className='cursor-pointer' fgColor='gray' bgColor='transparent' network='email' />
+            <SocialIcon className='cursor-pointer ' fgColor='gray' bgColor='transparent' network='email' />
             <p className='uppercase hidden md:inline-flex text-sm text-gray-600'>Get in touch</p>
           </div>
           
-          {/* Resume */}
-          <div  
-            //  Open the mail Id to send
-
-             onClick={()=>{window.open(`Assets/Ashwin-resume.pdf`,'_blank')}}
-            className='flex flex-row ml-4 xs:ml-3'
-          >
-            {/* <SocialIcon className='cursor-pointer' fgColor='gray' bgColor='transparent' network='soundcloud' /> */}
-            <DocumentTextIcon className='h-6 w-6 text-gray-500 text-semibold'/>
-            <p className='ml-2 font-semibold uppercase hidden md:inline-flex text-sm text-gray-600'>Resume</p>
-          </div>  
         </motion.div>
     </header>
   )

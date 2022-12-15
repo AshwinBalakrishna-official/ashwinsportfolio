@@ -1,6 +1,7 @@
 import React from "react";
 import SectionHeader from "./SectionHeader";
 import { motion } from "framer-motion";
+import { ArrowDownTrayIcon } from "@heroicons/react/24/solid";
 
 type Props = {};
 
@@ -36,7 +37,7 @@ const About = (props: Props) => {
         transition={{
           duration: 1,
         }}
-        className="-mb-20 xs:mb-0  xl:mt-20 mt-20  xs:mt-20 flex-shrink-0 w-56 h-56 rounded-full object-fit md:rounded-lg xl:w-[400px] xl:h-[400px]"
+        className="-mb-20 xs:mb-0  xl:mt-20 mt-20  xs:mt-24 flex-shrink-0 w-56 h-56 rounded-full object-fit md:rounded-lg xl:w-[400px] xl:h-[400px]"
         src="Assets/images/Software-Developer.svg"
         alt="no img found"
         width={300}
@@ -64,17 +65,23 @@ const About = (props: Props) => {
           transition={{
             duration: 1.5,
           }}
-          className="text-base xl:text-lg xl:font-semibold md:text-lg md:font-semibold xs:text-sm xs:font-thin xs:mb-0"
+          className="text-base max-w-2xl xl:text-lg xl:font-semibold md:text-lg md:font-semibold xs:text-sm xs:font-thin xs:mb-0"
         >
 
           Hello, I&apos;m Ash. As a front-end web developer,
-          coding and designing are my two great loves.<br />
-           I&apos;m a computer graduate, a coffee addict with insomnia, <br />
-           and I love to brainstorm ideas and find solutions to make my job easier.<br />
-           I&apos;m down to watch or play some sport if you have a spot
-           or an 8<sup>2</sup > box board game if u have figured it out !!
+          coding and designing are my two great loves.
+          I&apos;m a computer graduate, a coffee addict with insomnia,
+          and love to brainstorm ideas and find solutions to make my job easier.
+          I&apos;m down to watch or play some sport if you have a spot
+          or an 8<sup>2</sup > box board game if u have figured it out !!
         </motion.p>
         
+
+        <div className="items-center justify-center">
+            <button onClick={()=>{
+              window.open(`Assets/Ashwin-resume.pdf`,'_blank')
+            }} className='w-[300px] xs:w-[20rem] font-semibold  rounded-lg px-5 py-3 bg-[#FFA500]/70 hover:bg-[#FFA500] flex justify-center items-center '> <span className=" flex-col">Download Resume</span>  <ArrowDownTrayIcon className="h-5 w-8  flex-col" /></button>
+        </div> 
         <br />
         {/* Baseline */}
         <hr style={{ borderColor: "#FFA500" }} />
