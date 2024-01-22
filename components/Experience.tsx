@@ -16,10 +16,10 @@ const Experience = (props: Props) => {
     {
       company :'Aditya Birla Fashion and Retail Ltd',
       company_img: 'Assets/logo/ABFRLlogo.png',
-      position : 'ReactJs Developer',
+      position : 'NextJs Developer',
       start : 'AUG-2022',
       end: 'PRESENT',
-      points: ['Full fledged ecommerce backend Sys.','React developer', 'Revamped the website from PHP to React', 'Responsible for maintaining coding standards', 'Managed code integration and rework'],
+      points: ['CMS APPLICATION','React developer', 'Revamped the website from PHP to React', 'Responsible for maintaining coding standards', 'Managed code integration and rework'],
       tech: ['/Assets/techlogo/ReactIcon.png', '/Assets/techlogo/TSIcon.png','/Assets/techlogo/GitIcon.png', '/Assets/techlogo/tailwindcss.png']
     },
     
