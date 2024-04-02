@@ -36,12 +36,12 @@ const Hero: React.FC<Props> = (props) => {
         {/* INTRO CONTENT */}
         <div className="z-20">
           {/* Title */}
-          <h2 className="text-sm uppercase text-gray-600 pb-2 tracking-[15px] ">
-            Software engineer
+          <h2 className="text-xl capitalize text-gray-600 pb-2 tracking-[5px] ">
+            Sr Product Engineer
           </h2>
 
           {/* Hobbies */}
-          <h1 className="text-4xl lg:text-5xl font-semibold px-2">
+          <h1 className="text-3xl lg:text-2xl font-semibold px-2">
             <span>{text}</span>
             <Cursor cursorColor="#FFA500" />
           </h1>

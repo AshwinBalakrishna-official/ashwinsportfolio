@@ -31,7 +31,7 @@ const ExperienceCard = ({start,end,company,position,points,img_url,techimgs}: Pr
           duration: 1.5,
         }}
         viewport={{ once: true }}
-        className="w-30 h-30 rounded xs:w-[80px] xs:h-[80px] xl:w-28 xl:h-28  object-left object-fit my-1"
+        className="w-30 h-30 rounded xs:w-[80px] xs:h-[80px] xl:w-28 xl:h-28  object-left object-fit my-1 "
         // Company Logo
         src={img_url}
         alt="No img"
@@ -53,7 +53,7 @@ const ExperienceCard = ({start,end,company,position,points,img_url,techimgs}: Pr
               key={idx+"a"}
               src={tlogo}
               alt="No_img"
-              className="h-10 w-10 rounded-full "
+              className="h-10 w-10 rounded-full bg-white bg-opacity-85 p-1"
               width={100}
               height={100}
               />

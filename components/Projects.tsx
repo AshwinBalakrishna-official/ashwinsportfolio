@@ -7,6 +7,15 @@ type Props = {};
 
 const Projects = (props: Props) => { 
   const projects = [
+
+    {
+      url: 'https://skillsify.in/',
+      img: "/Assets/logo/skillsifylogo.png",
+      name: "Skillsify",
+      description:
+        "A full fledged e-commerce web application developed on Wordpress including stripe integration for selling gardening products, books and plants.Did this while I worked as the Head of web development as Skillsify",
+    },
+    
     {
       url:"https://github.com/AshwinBalakrishna-official/cinescape-ott",
       img: "/Assets/logo/ciniscape_logo.png",
@@ -25,13 +34,7 @@ const Projects = (props: Props) => {
         "Kalanju - A Codingmart Technologies internal application for maintaining the details of its employees and tracking their everyday attendance. Kalanju is also used for tracking the company's assets provided to the employees and their project details. It is also used for managing the client details and users can also generate invoices and credit notes for clients within its integrated invoice management system.",
     },
 
-    {
-      url: 'https://skillsify.in/',
-      img: "/Assets/logo/skillsifylogo.png",
-      name: "Skillsify",
-      description:
-        "A full fledged e-commerce web application developed on Wordpress including stripe integration for selling gardening products, books and plants.Did this while I worked as the Head of web development as Skillsify",
-    },
+   
 
     // {
     //   url:'https://ashwinbalakrishna-official.github.io/Tindog/',

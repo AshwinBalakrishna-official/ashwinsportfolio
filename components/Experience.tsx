@@ -11,16 +11,26 @@ const Experience = (props: Props) => {
     
   const experiences=[
 
+    // Codingmart
+    {
+      company : 'Codingmart Technologies',
+      company_img: 'Assets/logo/codingmartlogo.png',
+      position : 'Senior Product Engineer ',
+      start : 'MAR-2021',
+      end: 'PRESENT',
+      points: ['React and NextJs developer', 'Converted Figma designs to UI', 'Responsible for CI/CD Integration', 'Carried out the Ec2 Instance Setup', 'REST API creation'],
+      tech: ['/Assets/techlogo/NextjsIcon.png', '/Assets/techlogo/ReactIcon.png','/Assets/techlogo/Nodejs.png', '/Assets/techlogo/dockerIcon.png','/Assets/techlogo/GitIcon.png']
+    },
     
     // ABFRL
     {
       company :'Aditya Birla Fashion and Retail Ltd',
       company_img: 'Assets/logo/ABFRLlogo.png',
-      position : 'NextJs Developer',
+      position : 'React Js Developer (Consultant)',
       start : 'AUG-2022',
       end: 'PRESENT',
-      points: ['CMS APPLICATION','React developer', 'Revamped the website from PHP to React', 'Responsible for maintaining coding standards', 'Managed code integration and rework'],
-      tech: ['/Assets/techlogo/ReactIcon.png', '/Assets/techlogo/TSIcon.png','/Assets/techlogo/GitIcon.png', '/Assets/techlogo/tailwindcss.png']
+      points: ['CMS APPLICATION','Next/React Js developer', 'Revamped the website from PHP to React', 'Responsible for maintaining coding standards', 'Integrated Redux store to improve performance'],
+      tech: ['/Assets/techlogo/NextjsIcon.png', '/Assets/techlogo/ReactIcon.png', '/Assets/techlogo/TSIcon.png','/Assets/techlogo/GitIcon.png', '/Assets/techlogo/tailwindcss.png']
     },
     
     // 2HUB
@@ -35,15 +45,17 @@ const Experience = (props: Props) => {
     },
 
 
-    // Codingmart
-    {
-      company : 'Codingmart Technologies',
-      company_img: 'Assets/logo/codingmartlogo.png',
-      position : 'Product Engineer',
-      start : 'MAR-2021',
-      end: 'PRESENT',
-      points: ['React and NextJs developer', 'Converted Figma designs to UI', 'Responsible for CI/CD Integration', 'Carried out the Ec2 Instance Setup', 'REST API creation'],
-      tech: ['/Assets/techlogo/ReactIcon.png','/Assets/techlogo/NextjsIcon.png', '/Assets/techlogo/Nodejs.png', '/Assets/techlogo/dockerIcon.png','/Assets/techlogo/GitIcon.png']
+    
+
+     // Aztrikz Tech
+     {
+      company : 'Aztrikz Tech',
+      company_img: 'Assets/logo/AztrikzTech.png',
+      position : 'Founder',
+      start : 'AUG-2019',
+      end: 'MAR-2021',
+      points: ['Founded and led Aztrikz Tech.', 'Proficient in understanding client needs' , 'Skilled in translating client requirements', 'Spearheaded the development and optimisation', 'Product and Project Owner'],
+      tech: ['/Assets/techlogo/ReactIcon.png','/Assets/techlogo/wordpressicon.png','/Assets/techlogo/elementorIcon.png','/Assets/techlogo/bootstrapicon.png','/Assets/techlogo/GitIcon.png']
     },
 
     // Skillsify
