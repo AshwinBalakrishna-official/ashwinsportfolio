@@ -70,7 +70,7 @@ const About = (props: Props) => {
 
           Hello, I&apos;m Ashwin. A vibrant front-end developer,
           highly skilled in designing progressive web applications using React and NextJs.
-          I&apos;m a computer graduate,whose a coffee addict with insomnia.
+          I&apos;m a computer graduate who managed to complete his journey from a mentee in SIH (SMART INDIA HACKATHON) to becoming a mentor at UIAH (UNESCO INDIA AFRICA HACKATHON).
           Brainstorming ideas and finding solutions to make my job easier is a forte I enjoy.
           I&apos;m down to watch or play some sport if you have a spot. Could give a run for your money on an 8<sup>2</sup > box board game if you have figured out what the game is !!!
         </motion.p>
