@@ -6,7 +6,7 @@ type Props = {};
 
 const Experience = (props: Props) => {
   const points={
-    codingmart: ['React and NextJs vibrant front end developer ', 'Responsible for converting Figma designs to Interactive UI', 'Responsible for CI/CD Integration', 'Ec2 Instance Setup']
+    codingmart: [' A vibrant React and NextJs front end developer ', 'Responsible for converting Figma designs to Interactive UI', 'Responsible for CI/CD Integration', 'Ec2 Instance Setup']
     }
     
   const experiences=[
