@@ -11,7 +11,7 @@ const ContactMe = (props: Props) => {
         <SectionHeader sectionName="Contact" />
         <div className='flex flex-col space-y-10 mt-3 xs:px-10'>
             <h4 className='text-3xl xs:text-3xl font-semibold'>
-                <span>Guess I have what you need!</span>
+                <span>Get In Touch!</span>
                 <span className='text-xl font-semibold underline decoration-[#FFA500]'> Lets Talk</span>
             </h4>
 
