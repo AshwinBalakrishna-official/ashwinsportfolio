@@ -7,7 +7,16 @@ type Props = {};
 
 const Projects = (props: Props) => { 
   const projects = [
-
+    // Sagent
+    {
+      url: 'https://skillsify.in/',
+      img: "/Assets/logo/sagentlogo.png",
+      name: "Sagent Dara Moonshot",
+      description:
+        "Dara is an industry-first mortgage software platform that unifies all data and user experiences for servicers and homeowners across the entire servicing lifecycle. Build customer relationships, reduce operational costs, and prioritize compliance within a single user experience for your teams and homeowners built on real-time, end-to-end data.",
+    },
+    
+    // Skillsify
     {
       url: 'https://skillsify.in/',
       img: "/Assets/logo/skillsifylogo.png",
@@ -15,6 +24,14 @@ const Projects = (props: Props) => {
       description:
         "A full fledged e-commerce web application developed on Wordpress including stripe integration for selling gardening products, books and plants.Did this while I worked as the Head of web development as Skillsify",
     },
+      // 2HUB
+      {
+        name:'2HUB',
+        img: 'Assets/logo/2hublogo.png',
+        description:
+        "A full fledged e-commerce web application developed on Wordpress including stripe integration for selling gardening products, books and plants.Did this while I worked as the Head of web development as Skillsify",
+        url: 'https://eastboundgroup.com/',
+      },
     
     {
       url:"https://github.com/AshwinBalakrishna-official/cinescape-ott",

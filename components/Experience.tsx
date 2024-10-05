@@ -5,11 +5,19 @@ import SectionHeader from "./SectionHeader";
 type Props = {};
 
 const Experience = (props: Props) => {
-  const points={
-    codingmart: [' A vibrant React and NextJs front end developer ', 'Responsible for converting Figma designs to Interactive UI', 'Responsible for CI/CD Integration', 'Ec2 Instance Setup']
-    }
-    
+      
   const experiences=[
+
+    // Payoda
+    {
+      company : 'Payoda Technology Inc',
+      company_img: 'Assets/logo/payodalogo.png',
+      position : 'Software Engineer ',
+      start : 'JUN-2024',
+      end: 'PRESENT',
+      points: ['ReactJs developer', 'Carried out multiple Proof of concept demos for third party applications like LaunchDarkly and SonarQ', 'Wrote Test cases using Jest and Vite', 'Converted Figma designs to UI', 'Responsible for API Integrations'],
+      tech: [ '/Assets/techlogo/ReactIcon.png','/Assets/techlogo/recoillogo.svg', '/Assets/techlogo/launchdarklylogo.jpg','/Assets/techlogo/MaterialUiLogo.png','/Assets/techlogo/GitIcon.png']
+    },
 
     // Codingmart
     {
@@ -17,36 +25,23 @@ const Experience = (props: Props) => {
       company_img: 'Assets/logo/codingmartlogo.png',
       position : 'Senior Product Engineer ',
       start : 'MAR-2021',
-      end: 'PRESENT',
+      end: 'JUN-2024',
       points: ['React and NextJs developer', 'Converted Figma designs to UI', 'Responsible for CI/CD Integration', 'Carried out the Ec2 Instance Setup', 'REST API creation'],
       tech: ['/Assets/techlogo/NextjsIcon.png', '/Assets/techlogo/ReactIcon.png','/Assets/techlogo/Nodejs.png', '/Assets/techlogo/dockerIcon.png','/Assets/techlogo/GitIcon.png']
     },
     
     // ABFRL
     {
-      company :'Aditya Birla Fashion and Retail Ltd',
+      company :'Aditya Birla Fashion and Retail Ltd (Consultant)',
       company_img: 'Assets/logo/ABFRLlogo.png',
       position : 'React Js Developer (Consultant)',
       start : 'AUG-2022',
-      end: 'PRESENT',
+      end: 'JUN-2024',
       points: ['CMS APPLICATION','Next/React Js developer', 'Revamped the website from PHP to React', 'Responsible for maintaining coding standards', 'Integrated Redux store to improve performance'],
       tech: ['/Assets/techlogo/NextjsIcon.png', '/Assets/techlogo/ReactIcon.png', '/Assets/techlogo/TSIcon.png','/Assets/techlogo/GitIcon.png', '/Assets/techlogo/tailwindcss.png']
     },
     
-    // 2HUB
-    {
-      company :'2HUB',
-      company_img: 'Assets/logo/2hublogo.png',
-      position : 'NextJs Developer',
-      start : 'SEP-2021',
-      end: 'AUG-2022',
-      points: ['Travel and hotel booking domain website','NextJs developer', 'Converted Figma designs to UI', 'Responsible for CI/CD Integration', 'Carried out the Ec2 Instance Setup'],
-      tech: ['/Assets/techlogo/NextjsIcon.png','/Assets/techlogo/SassIcon.png', '/Assets/techlogo/dockerIcon.png', '/Assets/techlogo/GItIcon.png', '/Assets/techlogo/CICDIcon.png']
-    },
-
-
-    
-
+   
      // Aztrikz Tech
      {
       company : 'Aztrikz Tech',
@@ -92,14 +87,6 @@ const Experience = (props: Props) => {
 
         }
 
-        {/* Codingmart-ABFRL */}
-        {/* <ExperienceCard /> */}
-
-        {/* Codingnmart-2HUB*/}
-        {/* <ExperienceCard /> */}
-
-        {/* Skillsify */}
-        {/* <ExperienceCard /> */}
       </div>
     </div>
   );
