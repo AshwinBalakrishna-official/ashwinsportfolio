@@ -34,7 +34,7 @@ const Skills = (props: Props) => {
         </h3>
 
         {/* List all skills */}
-        <div className='grid grid-cols-4 lg:grid-cols-8 gap-3 sm:gap-5 justify-items-center mt-6'>
+        <div className='grid grid-cols-4 gap-4 sm:gap-6 xl:gap-8 justify-items-center mt-6'>
           <Skill url={"/Assets/techlogo/NextjsIcon.png"} score={80} />
           <Skill url={"/Assets/techlogo/ReactIcon.png"} score={85}/>
           <Skill url={"/Assets/techlogo/JsIcon.png"} score={90}/>
