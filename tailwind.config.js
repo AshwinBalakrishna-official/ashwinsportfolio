@@ -5,11 +5,7 @@ module.exports = {
     "./components/**/*.{js,ts,jsx,tsx}"
   ],
   theme: {
-    extend: {
-      screens: {
-        'xs': {'min': '300px', 'max': '410px'},
-      },
-    },
+    extend: {},
   },
   plugins: [
     require('tailwind-scrollbar'),

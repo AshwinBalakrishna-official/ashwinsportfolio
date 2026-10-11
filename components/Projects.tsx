@@ -7,9 +7,27 @@ type Props = {};
 
 const Projects = (props: Props) => { 
   const projects = [
+    // Solutions by Text
+    {
+      url: 'https://solutionsbytext.com/',
+      img: "/Assets/logo/sbtlogo.png",
+      name: "Solutions by Text — BPO Two-Way Chat Platform",
+      description:
+        "A real-time two-way chat PWA for BPO call centre operations, built at Payoda Technologies. Architected and own 10+ MFE modules using React.js, TypeScript and Webpack Module Federation, currently migrating to Vite with Zustand as the shared state layer. Eliminated lock-based operator-chat contention so multiple operators can handle concurrent multi-topic threads. Includes AWS Parameter Store runtime config and a zero-regression react-router-dom v5 to v7 upgrade.",
+    },
+
+    // ABFRL
+    {
+      url: 'https://allensolly.abfrl.in/',
+      img: "/Assets/logo/ABFRLlogo.png",
+      name: "Aditya Birla Fashion and Retail — CMS Dashboard",
+      description:
+        "Tech Lead for a team of 3 building a greenfield CMS dashboard using Next.js, Redux Toolkit, SSR/SSG, TypeScript and REST APIs. Drove HOC patterns and Redux Toolkit optimisations to reduce bundle size, enforced responsive design and WCAG a11y standards, and delivered on schedule with zero critical bugs at launch.",
+    },
+
     // Sagent
     {
-      url: 'https://skillsify.in/',
+      url: 'https://sagent.com/dara/',
       img: "/Assets/logo/sagentlogo.png",
       name: "Sagent Dara Moonshot",
       description:
@@ -24,13 +42,13 @@ const Projects = (props: Props) => {
       description:
         "A full fledged e-commerce web application developed on Wordpress including stripe integration for selling gardening products, books and plants.Did this while I worked as the Head of web development as Skillsify",
     },
-      // 2HUB
+      // Travolgo
       {
-        name:'2HUB',
-        img: 'Assets/logo/2hublogo.png',
+        name:'Travolgo',
+        img: '/Assets/logo/travolgologo.png',
         description:
-        "A full fledged e-commerce web application developed on Wordpress including stripe integration for selling gardening products, books and plants.Did this while I worked as the Head of web development as Skillsify",
-        url: 'https://eastboundgroup.com/',
+        "Hotel and travel booking platform at Codingmart Technologies. Achieved a 63.3% page load improvement through Webpack bundle optimisation, lazy loading and debouncing, and engineered an automated CI/CD pipeline that cut deployment time and removed manual release errors.",
+        url: 'https://www.travolgo.com/home',
       },
     
     {
@@ -63,48 +81,32 @@ const Projects = (props: Props) => {
   ];
 
   return (
-    <div className="flex flex-col relative text-center md:flex-row max-w-full px-10 justify-evenly mx-auto items-center w-full z-0 h-screen">
-      {/* <h3 className='absolute top-24 uppercase tracking-[20px] text-gray-500 text-2xl'>
-           Projects
-        </h3> */}
+    <div className="flex flex-col relative min-h-[100dvh] max-w-full px-0 sm:px-10 pt-32 sm:pt-36 xl:pt-28 pb-10 justify-center mx-auto items-center w-full z-0 overflow-hidden">
       <SectionHeader sectionName="projects" />
 
-      <div className="relative w-full flex overflow-x-scroll overflow-y-hidden snap-x snap-mandatory z-20 scrollbar scrollbar-track-gray-400/20 scrollbar-thumb-[#FFA500]/80 scrollbar-thin ">
+      <div className="relative w-full flex overflow-x-auto overflow-y-hidden snap-x snap-mandatory z-20 scrollbar scrollbar-track-gray-400/20 scrollbar-thumb-[#FFA500]/80 scrollbar-thin">
         {/* Projects */}
         {projects.map((project, idx) => (
           <div
-            key={idx + 1}
-            className="w-screen mt-12 flex-shrink-0 snap-center items-center m-auto flex flex-col space-y-10 justify-center p-20"
+            key={idx}
+            className="w-full flex-shrink-0 snap-center flex flex-col items-center justify-center space-y-6 sm:space-y-8 px-6 py-6 sm:p-12 lg:p-16 cursor-pointer"
             onClick={()=>{window.open(project.url,'_blank')}}
-            style={{cursor:"pointer"}}
-
           >
             <motion.img
-              initial={{
-                y: -150,
-                opacity: 0,
-              }}
-              transition={{
-                duration: 1.2,
-              }}
-              whileInView={{
-                opacity: 1,
-                y: 0,
-              }}
-              viewport={{
-                once: true,
-              }}
+              initial={{ y: -150, opacity: 0 }}
+              transition={{ duration: 1.2 }}
+              animate={{ opacity: 1, y: 0 }}
               src={project.img}
-              alt="no_img"
-              className="m-auto w-28 rounded xs:mt-20"
+              alt={project.name}
+              className="w-24 sm:w-36 rounded-lg object-contain bg-white p-2"
             />
-            <div className="space-y-5 xs:space-y-2 xl:px-20 xs:px-1 px-1 xs:max-w-6xl max-w-3xl ">
-              <h3 className="text-4xl xs:text-2xl font-semibold text-center mb-1">
+            <div className="space-y-3 sm:space-y-5 max-w-3xl">
+              <h3 className="text-xl sm:text-3xl lg:text-4xl font-semibold text-center">
                 {project.name}
               </h3>
-              <p className="mt-2">{project.description}</p>
+              <p className="text-sm sm:text-base lg:text-lg max-h-[35vh] overflow-y-auto text-gray-300">{project.description}</p>
               <h4>
-                <span className=" text-xl font-semibold underline decoration-[#FFA500]">
+                <span className="text-base sm:text-xl font-semibold underline decoration-[#FFA500]">
                   Project: {idx + 1} of {projects.length}
                 </span>
               </h4>
@@ -113,7 +115,7 @@ const Projects = (props: Props) => {
         ))}
       </div>
 
-      <div className="absolute mt-10 bg-[#FFA500]/10 left-0 xl:h-[400px] h-[600px] w-full -skew-y-12"></div>
+      <div className="absolute top-1/3 bg-[#FFA500]/10 left-0 h-[60%] sm:h-[400px] w-full -skew-y-12 pointer-events-none"></div>
     </div>
   );
 };

@@ -22,34 +22,34 @@ const Skills = (props: Props) => {
     
     
     
-    className='flex flex-col relative h-screen text-center md:text-left md:flex-row max-w-7xl px-10 justify-evenly items-center'>
+    className='flex flex-col relative min-h-[100dvh] text-center max-w-7xl mx-auto px-6 sm:px-10 pt-40 pb-12 justify-center items-center'>
         {/* <h3 className='absolute top-24 uppercase tracking-[20px] text-gray-500 text-2xl'>
             Skills
         </h3> */}
 
         <SectionHeader sectionName="skills" />
         
-        <h3 className='absolute top-36 xl:top-28 md:top-24 uppercase tracking-[3px] text-gray-500 text-sm'>
-          Hover or click over a skill to view Proficiency
+        <h3 className='absolute top-32 sm:top-36 xl:top-28 left-0 right-0 px-6 text-center uppercase tracking-[2px] sm:tracking-[3px] text-gray-500 text-xs sm:text-sm'>
+          Hover or tap a skill to view Proficiency
         </h3>
 
         {/* List all skills */}
-        <div className='grid grid-cols-4 gap-5 mt-28 '>
+        <div className='grid grid-cols-4 lg:grid-cols-8 gap-3 sm:gap-5 justify-items-center mt-6'>
           <Skill url={"/Assets/techlogo/NextjsIcon.png"} score={80} />
-          <Skill url={"/Assets/techlogo/Reacticon.png"} score={85}/>
-          <Skill url={"/Assets/techlogo/Jsicon.png"} score={90}/>
+          <Skill url={"/Assets/techlogo/ReactIcon.png"} score={85}/>
+          <Skill url={"/Assets/techlogo/JsIcon.png"} score={90}/>
           <Skill url={"/Assets/techlogo/TSIcon.png"} score={85}/>
           <Skill url={"/Assets/techlogo/MaterialUiLogo.png"} score={90}/>
           <Skill url={"/Assets/techlogo/tailwindcss.png"} score={85}/>
-          <Skill url={"/Assets/techlogo/bootstrapicon.png"} score={90}/>
-          <Skill url={"/Assets/techlogo/Sassicon.png"} score={80}/>
+          <Skill url={"/Assets/techlogo/bootstrapIcon.png"} score={90}/>
+          <Skill url={"/Assets/techlogo/SassIcon.png"} score={80}/>
           <Skill url={"/Assets/techlogo/recoillogo.svg"} score={80}/>
           <Skill url={"/Assets/techlogo/Nodejs.png"} score={70}/>
           <Skill url={"/Assets/techlogo/MangoIcon.png"} score={70}/>
-          <Skill url={"/Assets/techlogo/Giticon.png"} score={90}/>
-          <Skill url={"/Assets/techlogo/dockericon.png"} score={75}/>
-          <Skill url={"/Assets/techlogo/wordpressicon.png"} score={85}/>
-          <Skill url={"/Assets/techlogo/elementoricon.png"} score={90}/>
+          <Skill url={"/Assets/techlogo/GitIcon.png"} score={90}/>
+          <Skill url={"/Assets/techlogo/dockerIcon.png"} score={75}/>
+          <Skill url={"/Assets/techlogo/wordpressIcon.png"} score={85}/>
+          <Skill url={"/Assets/techlogo/elementorIcon.png"} score={90}/>
           <Skill url={"/Assets/techlogo/PythonIcon.png"} score={90}/>
         </div>
     </motion.div>

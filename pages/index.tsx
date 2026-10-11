@@ -1,5 +1,4 @@
 import Head from 'next/head'
-import Image from 'next/image'
 import Header from '../components/Header'
 import Hero from '../components/Hero'
 import About from '../components/About'
@@ -11,46 +10,44 @@ import ContactMe from '../components/ContactMe'
 
 export default function Home() {
   return (
-    <div className='bg-[rgb(36,36,36)] text-white h-screen snap-y snap-mandatory overflow-y-scroll overflow-x-hidden scrollbar xl:scrollbar-track-gray-400/20 xl:scrollbar-thumb-[#FFA500]/90 xl:scrollbar-thin xs:scrollbar-thin ' style={{scrollBehavior:'smooth'}}  >
+    <div className='bg-[rgb(36,36,36)] text-white h-[100dvh] snap-y snap-proximity md:snap-mandatory overflow-y-scroll overflow-x-hidden scrollbar scrollbar-thin scrollbar-track-gray-400/20 scrollbar-thumb-[#FFA500]/90' style={{scrollBehavior:'smooth'}}>
       <Head>
         <title>Ashwin&apos;s Portfolio</title>
-       
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
       </Head>
 
       {/* Header */}
-        <Header />
-
+      <Header />
 
       {/* HERO */}
-       <section id="hero" className='snap-start'>
+      <section id="hero" className='snap-start -mt-[76px] sm:-mt-[84px]'>
         <Hero />
       </section>
 
       {/* About */}
-      <section id="about" className='snap-center'>
-        <About /> 
+      <section id="about" className='snap-start'>
+        <About />
       </section>
 
       {/* Experience */}
-      <section id="experience" className='snap-center'>
-        <Experience /> 
+      <section id="experience" className='snap-start'>
+        <Experience />
       </section>
 
       {/* Skills */}
-      <section id="skills" className='snap-center'>
-        <Skills /> 
+      <section id="skills" className='snap-start'>
+        <Skills />
       </section>
 
       {/* Projects */}
-      <section id="projects" className='snap-center'>
+      <section id="projects" className='snap-start'>
         <Projects />
       </section>
 
       {/* Contact me */}
-      <section id="projects" className='snap-center'>
+      <section id="contact" className='snap-start'>
         <ContactMe />
       </section>
     </div>
-    
   )
 }

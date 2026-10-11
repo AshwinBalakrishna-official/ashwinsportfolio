@@ -5,44 +5,28 @@ type Props = {}
 
 const BackgroundCircles = (props: Props) => {
   return (
-    <motion.div 
-    
-    initial={
-        {
-            opacity :0
-        }
-    }
-
-
+    <motion.div
+    initial={{ opacity: 0 }}
     animate={{
         scale : [1,0.3,0.6,0.8,0.2,1],
         opacity :[ 0.2, 0.5, 0.3,1 ]
     }}
+    transition={{ duration :2.5 }}
+    className='absolute inset-0 flex justify-center items-center pointer-events-none'>
 
-    transition={{
-        duration :2.5,
-    }}
-    className='relative flex justify-center items-center mt-56 xs:mt-28 xl:mt-34'>
-    
-    
-    
         {/* Ripple effect circles */}
 
         {/* Inner Circle */}
-        <div className=" absolute border border-[#333333] rounded-full h-[150px] w-[150px] mt-52 animate-ping"/>
-        
-        {/* Middle circle */}
-        <div className=" absolute border border-[#333333] rounded-full h-[250px] w-[250px] mt-52 animate-pulse"/>
-        
-        {/* Outer Circle */}
-        <div className=" absolute border border-[#333333] rounded-full h-[450px] w-[450px] mt-52"/>
+        <div className="absolute border border-[#333333] rounded-full h-[110px] w-[110px] sm:h-[150px] sm:w-[150px] animate-ping"/>
 
+        {/* Middle circle */}
+        <div className="absolute border border-[#333333] rounded-full h-[190px] w-[190px] sm:h-[250px] sm:w-[250px] animate-pulse"/>
+
+        {/* Outer Circle */}
+        <div className="absolute border border-[#333333] rounded-full h-[280px] w-[280px] sm:h-[450px] sm:w-[450px]"/>
 
         {/* Diff color circle */}
-        <div className=" absolute border border-[#FFA500] opacity-30 rounded-full h-[600px] w-[600px] mt-52 animate-pulse"/>
-
-
-
+        <div className="absolute border border-[#FFA500] opacity-30 rounded-full h-[340px] w-[340px] sm:h-[600px] sm:w-[600px] animate-pulse"/>
     </motion.div>
   )
 }
